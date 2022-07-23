@@ -1,0 +1,228 @@
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(231, 100, 13);
+  align-items: center;
+  position: sticky;
+  top: 5px;
+  border-radius: 10px; /* Los 4 bordes, con un radio de 10 pixels */
+}
+
+.logo {
+  width: 100px;
+}
+
+nav {
+  width: 70%;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(231, 100, 13);
+  
+}
+
+#instagram {
+  height: 30px;
+}
+
+#facebook {
+  height: 30px;
+}
+
+/* body incio*/
+
+body {
+  height: 5000px;
+  background-color: rgb(245, 236, 236);
+}
+
+.cajabienvenida {
+  width: 100%;
+  margin-top: 2%;
+}
+
+#imagenbienvenida {
+  width: 100%;
+}
+
+.estructura {
+  display: flex;
+  margin-top: 1%;
+}
+
+.cajatexto {
+  width: 50%;
+  text-align: center;
+  margin: 2%;
+  
+}
+
+.cajaimagen1inicio {
+  width: 50%;
+  
+  
+}
+
+#pasteleria {
+  width: 100%;
+}
+
+/* body galeria */
+
+#main-galeria{
+  height: 1000px;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas: "a1 a2"
+                        "a3 a4"
+                        "a5 a6 ";
+row-gap: 2px;
+                        
+}
+
+.imagen{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  
+  border-top-right-radius : 10px; /* Borde superior derecho, con un radio de 5 pixels */
+  border-bottom-right-radius : 10px; /* Borde inferior derecho, con un radio de 5 pixels */
+  border-bottom-left-radius : 10px; /* Borde inferior izquierdo, con un radio de 5 pixels */
+  border-top-left-radius : 10px; /* Borde superior izquierdo, con un radio de 5 pixels */
+  border-radius: 10px; /* Los 4 bordes, con un radio de 5 pixels */
+
+}
+
+#foto1{
+  grid-area: a1;
+  
+}
+
+#foto2{
+  grid-area: a2;
+  padding: 60px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+#foto3{
+  grid-area: a3;
+  padding: 60px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+#foto4{
+  grid-area: a4;
+  
+}
+
+#foto5{
+  grid-area: a5;
+  
+}
+
+#foto6{
+  grid-area: a6;
+  padding: 60px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+.icon{
+  max-width: 100px;
+  width: 100%;
+}
+
+/* body quienes somos */
+
+
+/* body Donde estamos */
+.estructura {
+  height: 500px;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cajamapa {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  justify-content: start;
+  align-items: center;
+  margin-inline: 30px;
+  flex-wrap: wrap;
+  
+}
+
+/* body Contacto */
+
+.formulario {
+  width: 60%;
+  height: 300px;
+  background-color: rgb(231, 100, 13);
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+  background-color: rgb(231, 100, 13);
+}
+
+.bodyform {
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.marco {
+  text-align: center;
+}
