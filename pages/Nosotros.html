@@ -6,26 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PANADERIA LWA</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="bodyquienesomos">
     <header>
       <div>
         <a href="index.html">
-          <img class="logo" src="../images/lwa panaderias.png" alt="Logo" />
+          <img class="logo" src="../images/logo.png" alt="Logo" />
         </a>
       </div>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="galeria.html">Merchandasing</a></li>
           <li><a href="Nosotros.html">Quienes Somos</a></li>
           <li><a href="Dondeestamos.html">Donde Estamos</a></li>
           <li><a href="Contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <div></div>
+    <main class="somoslwa">
+      <div class="imagenempresa">
+        <img class="imagen-logo" src="../images/logo.png" alt="logo" />
+      </div>
+
+      <div class="texto-quienessomos">
+        <h1 class="texto-somos">
+          <span id="Lixogreen">Lixo</span> Team <span id="Armygreen">Army</span>
+        </h1>
+        <p class="texto-somos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
+          nisi laboriosam quas nulla, provident ducimus magni vero reiciendis.
+          Facilis officia alias explicabo aliquid! Mollitia vero reprehenderit
+          est sequi nostrum.
+        </p>
+      </div>
+    </main>
+    <article class="tarjetas">
+      <div id="tarjeta1" data-aos="flip-left" class="tarjeta">
+        <img src="../images/faze-clan-coldzera-photo.webp" alt="" />
+        <h2 class="card-texto">Contamos con experiencia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>
+          El famoso jugador apodado "Coldzera", ganador de la ESL 2017, se
+          entrenó en nuestra academia. Y actualmente da clases aquí, en LWA
+          Academy
+        </p>
+      </div>
+      <div id="tarjeta2" data-aos="flip-up" class="tarjeta">
+        <img src="../images/pngegg (1).png" alt="" />
+        <h2 class="card-texto">Te ayudamos a lograr tus metas</h2>
+        <p>Nuestros clientes están mas que satisfechos</p>
+
+        <p id="parrafo">
+          No podia llegar a nova desde hace 2 años pero con esta academia llegue
+          en solo una semana
+        </p>
+      </div>
+
+      <div id="tarjeta3" data-aos="flip-right" class="tarjeta">
+        <img src="coun" alt="" />
+        <h2 class="card-texto">Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+    </article>
     <footer>
       <span>
         <p>Seguinos en nuestras Redes Sociales</p>
@@ -46,5 +95,9 @@
         </nav>
       </span>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

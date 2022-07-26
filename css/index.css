@@ -1,3 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.603);
+}
+
 /* Header */
 
 header {
@@ -6,8 +18,10 @@ header {
   background-color: rgb(231, 100, 13);
   align-items: center;
   position: sticky;
-  top: 5px;
-  border-radius: 10px; /* Los 4 bordes, con un radio de 10 pixels */
+  top: 1px;
+  border-radius: 5px; /* Los 4 bordes, con un radio de 10 pixels */
+  margin-right: 1px;
+  margin-left: 1px;
 }
 
 .logo {
@@ -15,8 +29,8 @@ header {
 }
 
 nav {
-  width: 70%;
-  justify-content: center;
+  width: 75%;
+  justify-content: end;
 }
 
 ul {
@@ -33,11 +47,34 @@ a {
   color: white;
 }
 
+@media only screen and (max-width: 728px) {
+  header {
+    flex-direction: column;
+    height: 260px;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+  }
+  ul {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: disc;
+  }
+}
 /* footer */
 
 footer {
   background-color: rgb(231, 100, 13);
-  
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 #instagram {
@@ -49,79 +86,208 @@ footer {
 }
 
 /* body incio*/
-
-body {
-  height: 5000px;
-  background-color: rgb(245, 236, 236);
-}
-
-.cajabienvenida {
-  width: 100%;
-  margin-top: 2%;
-}
-
-#imagenbienvenida {
+#indexlogo {
+  max-width: 150px;
   width: 100%;
 }
 
-.estructura {
+#hero {
   display: flex;
-  margin-top: 1%;
-}
-
-.cajatexto {
-  width: 50%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 2%;
-  
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/esports-2020-2100x1200.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.cajaimagen1inicio {
-  width: 50%;
-  
-  
+#boton-inicio {
+  margin-top: 15px;
 }
 
-#pasteleria {
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+.main-index {
+  height: 300px;
   width: 100%;
+  background-color: rgba(31, 33, 35, 0.9);
+}
+
+#Front-planes-index {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+#Main-Title-index {
+  margin-bottom: 30px;
+  font: 700 60px Roboto, helvetica, arial, sans-serif;
+  color: #fcb823;
+}
+
+#Sub-Title-index {
+  color: white;
+  font: 400 20px Gotham, helvetica, arial, sans-serif;
+}
+
+#Front-planes-index {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Planes-padre {
+  height: 1500px;
+  width: 100%;
+}
+
+#Caja-Titulo-planes {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Titulo-planes {
+  width: 100%;
+  text-align: center;
+  color: #1f2123;
+  font: 300 36px Roboto, helvetica, arial, sans-serif;
+}
+
+#Caja-padre-grid {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#Caja-Grid-index {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: 700px;
+  grid-template-areas: "a1 a2";
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+#Plan-presencial {
+  grid-area: a1;
+  background-color: #1f2123;
+}
+
+#Plan-inteligente {
+  grid-area: a2;
+  box-shadow: rgba(0, 0, 0, 0.966) 0px 3px 8px;
+}
+
+.Plan-info {
+  padding: 0px 40px;
+  margin: 50px 0px 0px;
+  text-align: center;
+  height: 40%;
+}
+
+#Plan-title {
+  font: 700 25px Roboto, helvetica, arial, sans-serif;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#Plan-text {
+  font: 400 16px/24px Gotham, helvetica, arial, sans-;
+  margin: 0px 0px 30px;
+  color: #fff;
+}
+
+#Plan-title2 {
+  font: 700 25px Roboto, helvetica, arial, sans-serif;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+#Plan-text2 {
+  font: 400 16px/24px Gotham, helvetica, arial, sans-;
+  margin: 0px 0px 30px;
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 728px) {
+  #Caja-padre-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  #Caja-Grid-index {
+    grid-template-columns: 90%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas:
+      "a1"
+      "a2";
+    justify-content: center;
+    height: 100%;
+  }
 }
 
 /* body galeria */
 
-#main-galeria{
+#main-galeria {
   height: 1000px;
 }
 
-.galeria{
+.galeria {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 300px 300px 300px;
-  grid-template-areas: "a1 a2"
-                        "a3 a4"
-                        "a5 a6 ";
-row-gap: 2px;
-                        
+  grid-template-areas:
+    "a1 a2"
+    "a3 a4"
+    "a5 a6 ";
+  row-gap: 2px;
 }
 
-.imagen{
+.imagen {
   width: 100%;
   height: 100%;
   background-size: cover;
-  
-  border-top-right-radius : 10px; /* Borde superior derecho, con un radio de 5 pixels */
-  border-bottom-right-radius : 10px; /* Borde inferior derecho, con un radio de 5 pixels */
-  border-bottom-left-radius : 10px; /* Borde inferior izquierdo, con un radio de 5 pixels */
-  border-top-left-radius : 10px; /* Borde superior izquierdo, con un radio de 5 pixels */
-  border-radius: 10px; /* Los 4 bordes, con un radio de 5 pixels */
-
 }
 
-#foto1{
+#foto1 {
   grid-area: a1;
-  
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/Clases+de+Guitarra+Vitoria+Gasteiz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-#foto2{
+#foto2 {
   grid-area: a2;
   padding: 60px;
   justify-self: center;
@@ -129,7 +295,7 @@ row-gap: 2px;
   text-align: center;
 }
 
-#foto3{
+#foto3 {
   grid-area: a3;
   padding: 60px;
   justify-self: center;
@@ -137,47 +303,206 @@ row-gap: 2px;
   text-align: center;
 }
 
-#foto4{
+#foto4 {
   grid-area: a4;
-  
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/medialunasjpeg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-#foto5{
+#foto5 {
   grid-area: a5;
-  
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/optica_0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-#foto6{
+#foto6 {
   grid-area: a6;
   padding: 60px;
   justify-self: center;
   align-self: center;
   text-align: center;
 }
-.icon{
+.icon {
   max-width: 100px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /* body quienes somos */
 
+.somoslwa {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a1 a2";
+  column-gap: 20px;
+  justify-content: space-around;
+  justify-content: center;
+  justify-self: center;
+  padding: 20px 20px 0px 0px;
+  text-align: center;
+  background-color: rgb(204, 203, 203);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/esports.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
-/* body Donde estamos */
-.estructura {
-  height: 500px;
-  flex-wrap: nowrap;
+.imagenempresa {
+  grid-area: a1;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.imagen-logo {
+  max-width: 400px;
+  width: 90%;
+  height: auto;
+}
+.texto-quienessomos {
+  grid-area: a2;
+  color: white;
+  align-self: center;
+}
+
+#Lixogreen {
+  color: rgb(0, 255, 0);
+}
+
+#Armygreen {
+  color: rgb(0, 255, 0);
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: repeat(1 1fr);
+  grid-template-areas: "a1 a2 a3";
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 476.39px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(163, 163, 163);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.966) 0px 3px 8px;
+  align-self: center;
+}
+
+#tarjeta1 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#tarjeta2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tarjeta img {
+  max-width: 200px;
+  width: 50%;
+}
+
+.card-texto {
+  margin-bottom: 10px;
+}
+#reseña {
+  width: 50%;
+}
+
+#pelota {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#parrafo {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 728px) {
+  .tarjetas {
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3";
+  }
+
+  .somoslwa {
+    grid-template-columns: 90%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+      "a1"
+      "a2";
+  }
+
+  .imagenempresa {
+    align-self: start;
+  }
+
+  .texto-quienessomos {
+    align-self: start;
+  }
+}
+/* body Donde estamos */
+
+.padre-grid {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+.estructura {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px;
+  grid-template-areas: "a1 a2";
+  justify-content: center;
 }
 
 .cajamapa {
-  align-items: center;
-  height: 100%;
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 100%;
   justify-content: center;
-  
+  align-items: center;
 }
 
 .texto {
@@ -185,18 +510,30 @@ row-gap: 2px;
   flex-direction: column;
   text-align: center;
   height: 100%;
-  width: 50%;
-  justify-content: start;
+  width: 99%;
+  justify-content: center;
   align-items: center;
-  margin-inline: 30px;
   flex-wrap: wrap;
-  
+}
+
+@media only screen and (max-width: 728px) {
+  .estructura {
+    grid-template-columns: 90%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas:
+      "a1"
+      "a2";
+  }
+
+  .texto {
+    margin-inline: 0px;
+  }
 }
 
 /* body Contacto */
 
 .formulario {
-  width: 60%;
+  width: 90%;
   height: 300px;
   background-color: rgb(231, 100, 13);
 }
