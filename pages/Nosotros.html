@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PANADERIA LWA</title>
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -22,12 +22,10 @@
 
   <body class="bodyquienesomos">
     <header>
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-
-            <img class="logo" src="../images/logo.png" alt="">
-
+            <img class="logo" src="../images/logo.png" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -43,13 +41,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link"  href="../index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeria.html">Merchandasing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="Nosotros.html"
+                  >Nosotros</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Dondeestamos.html">Ubicacion</a>
@@ -80,33 +83,59 @@
       </div>
     </main>
     <article class="tarjetas">
-      <div id="tarjeta1" data-aos="flip-left" class="tarjeta">
-        <img src="../images/faze-clan-coldzera-photo.webp" alt="" />
-        <h2 class="card-texto">Contamos con experiencia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p>
-          El famoso jugador apodado "Coldzera", ganador de la ESL 2017, se
-          entrenó en nuestra academia. Y actualmente da clases aquí, en LWA
-          Academy
-        </p>
+      <div class="card mb-3">
+        <img id="foto1" src="../images/esports-2020-2100x1200.png" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
-      <div id="tarjeta2" data-aos="flip-up" class="tarjeta">
-        <img src="../images/pngegg (1).png" alt="" />
-        <h2 class="card-texto">Te ayudamos a lograr tus metas</h2>
-        <p>Nuestros clientes están mas que satisfechos</p>
-
-        <p id="parrafo">
-          No podia llegar a nova desde hace 2 años pero con esta academia llegue
-          en solo una semana
-        </p>
+      <div class="card mb-3">
+        <img src="../images/Clases+de+Guitarra+Vitoria+Gasteiz.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
-
-      <div id="tarjeta3" data-aos="flip-right" class="tarjeta">
-        <img src="coun" alt="" />
-        <h2 class="card-texto">Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      <div class="card mb-3">
+        <img src="../images/esports-2020-2100x1200.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
     </article>
+
+    <section class="section3">
+
+      <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../images/optica_0.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
     <footer>
       <span>
         <p>Seguinos en nuestras Redes Sociales</p>
@@ -131,5 +160,10 @@
     <script>
       AOS.init();
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
