@@ -1,17 +1,8 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; }
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.603); }
-
 /* body incio*/
 #indexlogo {
   max-width: 150px;
-  width: 100%; }
+  width: 100%;
+}
 
 #hero {
   display: flex;
@@ -20,20 +11,30 @@ body {
   text-align: center;
   flex-direction: column;
   height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/esports-2020-2100x1200.png");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/esports-2020-2100x1200.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  z-index: 1; }
-  #hero h1 {
-    color: white; }
-  #hero button {
-    font-size: 1.75em; }
+  z-index: 1;
+  & h1 {
+    color: white;
+  }
+
+  & button {
+    font-size: 1.75em;
+  }
+}
 
 .main-index {
   height: 300px;
   width: 100%;
-  background-color: rgba(31, 33, 35, 0.9); }
+  background-color: rgba(31, 33, 35, 0.9);
+}
 
 #Front-planes-index {
   display: flex;
@@ -41,46 +42,54 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%; }
+  height: 100%;
+}
 
 #Main-Title-index {
   margin-bottom: 30px;
   font: 700 60px Roboto, helvetica, arial, sans-serif;
-  color: #fcb823; }
+  color: #fcb823;
+}
 
 #Sub-Title-index {
   color: white;
-  font: 400 20px Gotham, helvetica, arial, sans-serif; }
+  font: 400 20px Gotham, helvetica, arial, sans-serif;
+}
 
 #Front-planes-index {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+}
 
 .Planes-padre {
   height: 1500px;
-  width: 100%; }
+  width: 100%;
+}
 
 #Caja-Titulo-planes {
   display: flex;
   width: 100%;
   height: 150px;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 #Titulo-planes {
   width: 100%;
   text-align: center;
   color: #1f2123;
-  font: 300 36px Roboto, helvetica, arial, sans-serif; }
+  font: 300 36px Roboto, helvetica, arial, sans-serif;
+}
 
 #Caja-padre-grid {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 #Caja-Grid-index {
   display: grid;
@@ -90,118 +99,160 @@ body {
   row-gap: 10px;
   column-gap: 20px;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+}
 
 #Plan-presencial {
   grid-area: a1;
-  background-color: #1f2123; }
+  background-color: #1f2123;
+}
 
 #Plan-inteligente {
   grid-area: a2;
-  box-shadow: rgba(0, 0, 0, 0.966) 0px 3px 8px; }
+  box-shadow: rgba(0, 0, 0, 0.966) 0px 3px 8px;
+}
 
 .Plan-info {
   padding: 0px 40px;
   margin: 50px 0px 0px;
   text-align: center;
-  height: 40%; }
+  height: 40%;
+}
 
 #Plan-title {
   font: 700 25px Roboto, helvetica, arial, sans-serif;
   margin-bottom: 5px;
-  color: #fff; }
-
+  color: #fff;
+}
 #Plan-text {
   font: 400 16px/24px Gotham, helvetica, arial, sans-;
   margin: 0px 0px 30px;
-  color: #fff; }
+  color: #fff;
+}
 
 #Plan-title2 {
   font: 700 25px Roboto, helvetica, arial, sans-serif;
   margin-bottom: 5px;
-  color: black; }
+  color: rgb(0, 0, 0);
+}
 
 #Plan-text2 {
   font: 400 16px/24px Gotham, helvetica, arial, sans-;
   margin: 0px 0px 30px;
-  color: black; }
+  color: rgb(0, 0, 0);
+}
 
 @media only screen and (max-width: 728px) {
   #Caja-padre-grid {
     display: flex;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
+
   #Caja-Grid-index {
     grid-template-columns: 90%;
     grid-template-rows: 40% 40%;
-    grid-template-areas: "a1" "a2";
+    grid-template-areas:
+      "a1"
+      "a2";
     justify-content: center;
-    height: 100%; } }
+    height: 100%;
+  }
+}
 
 /* body galeria */
+
 #main-galeria {
-  height: 1000px; }
+  height: 1000px;
+}
 
 .galeria {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 300px 300px 300px;
-  grid-template-areas: "a1 a2" "a3 a4" "a5 a6 ";
-  row-gap: 2px; }
+  grid-template-areas:
+    "a1 a2"
+    "a3 a4"
+    "a5 a6 ";
+  row-gap: 2px;
+}
 
 .imagen {
   width: 100%;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+}
 
 #foto1 {
   grid-area: a1;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Clases+de+Guitarra+Vitoria+Gasteiz.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/Clases+de+Guitarra+Vitoria+Gasteiz.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 #foto2 {
   grid-area: a2;
   padding: 60px;
   justify-self: center;
   align-self: center;
-  text-align: center; }
+  text-align: center;
+}
 
 #foto3 {
   grid-area: a3;
   padding: 60px;
   justify-self: center;
   align-self: center;
-  text-align: center; }
+  text-align: center;
+}
 
 #foto4 {
   grid-area: a4;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/medialunasjpeg.webp");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/medialunasjpeg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 #foto5 {
   grid-area: a5;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/optica_0.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/optica_0.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 #foto6 {
   grid-area: a6;
   padding: 60px;
   justify-self: center;
   align-self: center;
-  text-align: center; }
-
+  text-align: center;
+}
 .icon {
   max-width: 100px;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 /* body quienes somos */
+
 .somoslwa {
   height: 90vh;
   display: grid;
@@ -214,32 +265,43 @@ body {
   justify-self: center;
   padding: 20px 20px 0px 0px;
   text-align: center;
-  background-color: #cccbcb;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/esports.jpg");
+  background-color: rgb(204, 203, 203);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/esports.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 .imagenempresa {
   grid-area: a1;
+
   align-self: center;
-  justify-self: center; }
+  justify-self: center;
+}
 
 .imagen-logo {
   max-width: 400px;
   width: 90%;
-  height: auto; }
-
+  height: auto;
+}
 .texto-quienessomos {
   grid-area: a2;
   color: white;
-  align-self: center; }
+  align-self: center;
+}
 
 #Lixogreen {
-  color: lime; }
+  color: rgb(0, 255, 0);
+}
 
 #Armygreen {
-  color: lime; }
+  color: rgb(0, 255, 0);
+}
 
 .tarjetas {
   display: grid;
@@ -250,55 +312,77 @@ body {
   justify-content: space-evenly;
   gap: 2rem;
   margin-top: 150px;
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+}
 
 .card {
   width: 100%;
   height: 400px;
   border-radius: 10px;
   text-align: center;
-  color: black;
-  background-color: #a3a3a3;
+  color: rgb(0, 0, 0);
+  background-color: rgb(163, 163, 163);
+
   box-shadow: rgba(0, 0, 0, 0.966) 0px 3px 8px;
-  align-self: center; }
+  align-self: center;
+}
 
 .card-img-top {
   max-height: 191.28px;
-  height: 100%; }
+  height: 100%;
+}
 
 #card1 {
-  justify-self: center; }
+  justify-self: center;
+}
 
 #card2 {
-  justify-self: center; }
+  justify-self: center;
+}
 
 #card3 {
-  justify-self: center; }
+  justify-self: center;
+}
 
 @media only screen and (max-width: 728px) {
   .tarjetas {
     grid-template-columns: 90%;
     grid-template-rows: repeat(3 1fr);
-    grid-template-areas: "a1" "a2" "a3"; }
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3";
+  }
+
   .somoslwa {
     grid-template-columns: 90%;
     grid-template-rows: 400px 400px;
-    grid-template-areas: "a1" "a2"; }
+    grid-template-areas:
+      "a1"
+      "a2";
+  }
+
   .imagenempresa {
-    align-self: start; }
+    align-self: start;
+  }
+
   .texto-quienessomos {
-    align-self: start; } }
+    align-self: start;
+  }
+}
 
 .section3 {
   width: 100%;
   height: 500px;
-  display: grid; }
-
+  display: grid;
+}
 /* body Donde estamos */
+
 .padre-grid {
   display: flex;
   justify-content: center;
-  height: 1000px; }
+  height: 1000px;
+}
 
 .estructura {
   width: 90%;
@@ -306,14 +390,16 @@ body {
   grid-template-columns: 50% 50%;
   grid-template-rows: 500px;
   grid-template-areas: "a1 a2";
-  justify-content: center; }
+  justify-content: center;
+}
 
 .cajamapa {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .texto {
   display: flex;
@@ -323,80 +409,53 @@ body {
   width: 99%;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 @media only screen and (max-width: 728px) {
   .estructura {
     grid-template-columns: 90%;
     grid-template-rows: 40% 40%;
-    grid-template-areas: "a1" "a2"; }
+    grid-template-areas:
+      "a1"
+      "a2";
+  }
+
   .texto {
-    margin-inline: 0px; } }
+    margin-inline: 0px;
+  }
+}
 
 /* body Contacto */
+
 .formulario {
   width: 90%;
   height: 300px;
-  background-color: #e7640d; }
+  background-color: rgb(231, 100, 13);
+}
 
 fieldset {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   height: 100%;
-  background-color: #e7640d; }
+  background-color: rgb(231, 100, 13);
+}
 
 .bodyform {
   height: 400px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+}
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+}
 
 .marco {
-  text-align: center; }
-
-/* Header */
-.navbar .navbar-expand-lg {
-  z-index: 3; }
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center; }
-
-.navbar-nav {
-  width: 60%;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-style: inherit; }
-
-.nav-link {
-  color: rgba(0, 0, 0, 0.226); }
-
-.navbar {
-  background-color: #ff9900; }
-
-.navbar-brand {
-  justify-content: center; }
-
-.logo {
-  width: 100px;
-  justify-self: center; }
-
-/* footer */
-footer {
-  background-color: #e7640d;
-  border-radius: 10px;
-  grid-column-start: 1;
-  grid-column-end: -1; }
-
-#instagram {
-  height: 30px; }
-
-#facebook {
-  height: 30px; }
+  text-align: center;
+}

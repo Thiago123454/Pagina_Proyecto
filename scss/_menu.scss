@@ -1,0 +1,51 @@
+/* Header */
+
+.navbar .navbar-expand-lg {
+  z-index: 3;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  width: 60%;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: inherit;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.226);
+}
+
+.navbar {
+  background-color: rgb(255, 153, 0);
+}
+
+.navbar-brand {
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  justify-self: center;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(231, 100, 13);
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+#instagram {
+  height: 30px;
+}
+
+#facebook {
+  height: 30px;
+}
